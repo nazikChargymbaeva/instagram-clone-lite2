@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  font-family: Inter, Arial, sans-serif;
+}
+
+body {
+  color: #111827;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}

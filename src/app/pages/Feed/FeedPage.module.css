@@ -1,0 +1,104 @@
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero {
+  margin-bottom: 26px;
+}
+
+.badge {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #f3e8ff;
+  color: #7e22ce;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.text {
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+}
+
+.skeletonCard {
+  height: 620px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #e5e7eb, #f3f4f6);
+  border: 1px solid #eceff3;
+  animation: pulse 1.4s infinite ease-in-out;
+}
+
+.emptyState {
+  background: white;
+  border: 1px solid #eceff3;
+  border-radius: 28px;
+  box-shadow: 0 15px 40px rgba(17, 24, 39, 0.05);
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.emptyTitle {
+  font-size: 28px;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.emptyText {
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+.moreLoading,
+.endText {
+  text-align: center;
+  padding: 22px 0 8px;
+  color: #6b7280;
+  font-weight: 700;
+}
+
+.loadMoreTrigger {
+  height: 20px;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.65;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.65;
+  }
+}
+
+@media (max-width: 640px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .skeletonCard {
+    height: 480px;
+  }
+
+  .emptyState {
+    padding: 28px 16px;
+  }
+}
